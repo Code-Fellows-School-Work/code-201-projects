@@ -20,12 +20,12 @@ main {
 }
 
 p {
-  margin: 10px 0px 10px 0px;
+  margin: 10;
 }
 
 main li {
   margin: 25px;
-  list-style-type: georgian;
+  list-style-type: circle;
 }
 
 footer {
