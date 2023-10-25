@@ -1,0 +1,36 @@
+/* SELECTOR: "body", applies style to: <body> tag and all children */
+
+body {
+  background: #ccc;
+}
+
+header {
+  background: #111;
+  color: green;
+  text-align: center;
+  padding: 30px;
+}
+
+header h1 {
+  font-size: 40pt;
+}
+
+main {
+  margin: 25px;
+}
+
+p {
+  margin: 10;
+}
+
+main li {
+  margin: 25px;
+  list-style-type: circle;
+}
+
+footer {
+  background: maroon;
+  color: gray;
+  padding: 10px;
+  text-align: center;
+}
