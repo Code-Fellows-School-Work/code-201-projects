@@ -2,8 +2,8 @@
 
 ## About Me
 
-Lab - 02 This is the about me projects, 1st Day. Adding some info about me, and 4 questions
-Lab - 03 I build an app with a direct and powerful purpose. It does all of the things that it accomplishes well. I should describe the purpose and functionality so those that visit my README understand the app
+- Lab - 02 This is the about me projects, 1st Day. Adding some info about me, and 4 questions
+- Lab - 03 I added loops and 
 
 ### Author: Errol Vidad
 
@@ -13,7 +13,7 @@ Lab - 03 I build an app with a direct and powerful purpose. It does all of the t
 
 ### Lighthouse Accessibility Report Score
 
-* ![Lab 2 accessibility results](/class2/img/accessibility-score.PNG)
+- ![Lab 2 accessibility results](/class2/img/accessibility-score.PNG)
 
 ### Reflections and Comments
 
