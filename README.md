@@ -3,7 +3,7 @@
 ## About Me
 
 - Lab - 02 This is the about me projects, 1st Day. Adding some info about me, and 4 questions
-- Lab - 03 I added loops and 
+- Lab - 03 I added loops and created a guessing game so the user can guess my age and the mascot for one of my favorite sports teams
 
 ### Author: Errol Vidad
 
@@ -13,9 +13,9 @@
 
 ### Lighthouse Accessibility Report Score
 
-- ![Lab 2 accessibility results](/class2/img/accessibility-score.PNG)
+- ![Lab 3 accessibility results](/class3/img/Capture%20lab3.PNG)
 
 ### Reflections and Comments
 
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+* I used ChatGPT to help debug my loop statements
+* I watched the lab 3 demo to review how John wrote the loop statements in his code
