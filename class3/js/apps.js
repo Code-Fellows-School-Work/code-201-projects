@@ -15,7 +15,7 @@ dog = dog.toLowerCase();
 console.log(dog);
 if (dog === 'yes' || dog === 'y') {
   alert('Correct, I do!');
-  correctAnswers++;
+  correctAnswers++; //added to count correct answer
 } else {
   alert('Nope, I do');
 }
@@ -25,13 +25,13 @@ let flavor = prompt('Is tonkotsu my favorite ramen flavor?');
 flavor = flavor.toLowerCase();
 console.log(flavor);
 switch (flavor) {
-case 'yes':
-case 'y':
-  alert('Yes and it\'s also my dog\'s name too!');
-  correctAnswers++;
-  break;
-default:
-  alert('It really is actually');
+  case 'yes':
+  case 'y':
+    alert('Yes and it\'s also my dog\'s name too!');
+    correctAnswers++; //added to count correct answer
+    break;
+  default:
+    alert('It really is actually');
 }
 
 // y or n question using if.. else statement
@@ -40,7 +40,7 @@ city = city.toLowerCase();
 console.log(city);
 if (city === 'yes' || city === 'y') {
   alert('I wish, but not correct!');
-  correctAnswers++;
+  correctAnswers++; //added to count correct answer
 } else {
   alert('Yep, I no longer live there');
 }
@@ -50,13 +50,13 @@ let experience = prompt('Did I serve in the Navy?');
 experience = experience.toLowerCase();
 console.log(experience);
 switch (city) {
-case 'yes':
-case 'y':
-  alert('Correct for 9 years!');
-  correctAnswers++;
-  break;
-default:
-  alert('Nope I did for 9 years');
+  case 'yes':
+  case 'y':
+    alert('Correct for 9 years!');
+    correctAnswers++; //added to count correct answer
+    break;
+  default:
+    alert('Nope I did for 9 years');
 }
 
 // y or n question using switch statement
@@ -64,24 +64,25 @@ let code = prompt('Is my favorite coding language CSS?');
 code = code.toLowerCase();
 console.log(code);
 switch (code) {
-case 'no':
-case 'n':
-  alert('Right, who really likes that anyways?');
-  correctAnswers++;
-  break;
-default:
-  alert('Haha defintely not');
+  case 'no':
+  case 'n':
+    alert('Right, who really likes that anyways?');
+    correctAnswers++; //added to count correct answer
+    break;
+  default:
+    alert('Haha defintely not');
 }
 
 // number question asking user to guess a number and responding if number is too high or too low
 // also has 4 attemps otherwise give answer to user after 4th incorrect attempt
 let myAge = 31;
-for (let i = 1; i <= 4; i++){
+
+for (let i = 1; i <= 4; i++) {
   let userGuess = prompt('Guess my age');
   console.log(userGuess);
   if (userGuess == myAge) {
     alert('You got it right!');
-    correctAnswers++;
+    correctAnswers++; //added to count correct answer
     break;
   } else if (userGuess < myAge) {
     alert('Too low, try again');
@@ -94,28 +95,30 @@ for (let i = 1; i <= 4; i++){
 }
 
 //created loop for array question
-let myCountries = ['Japan', 'Kwajalein Atoll', 'Guam', 'Philippines', 'South Korea', 'Hong Kong', 'Thailand', 'France', 'Switzerland', 'Greece'];
-
+let myMascot = ['Padres', 'Jaguars', 'Gulls'];
 
 for (let i = 1; i <= 6; i++) {
-  let countryGuess = prompt('Guess a country I\'ve visited');
-  countryGuess = countryGuess.toLowerCase();
-  console.log(countryGuess);
+  let mascotGuess = prompt('Guess a mascot for my favorite sports team');
+  // mascotGuess = mascotGuess.toLowerCase(); // I can't figure out why I can't lowercase the Teams so I removed this code
+  console.log(mascotGuess);
 
-  if (myCountries.includes(countryGuess)) {
+  if (myMascot.includes(mascotGuess)) {
     alert('You guessed right!');
-    correctAnswers++; // Increment correctAnswers if the guess is correct
+    correctAnswers++; //added to count correct answer
     break;
   } else {
     alert('Try again');
   }
 
-//after 6th attempt, lists the array within the webpage
-if ( i === 6) {
-  alert('Sorry that was your 6th attempt. Here are all the countries I\'ve visted:');
-for (let i = 0; i < myCountries.length; i++){
-  alert(myCountries[i]);}
+  //after 6th attempt, lists the array within the webpage as alerts. I don't know how to join the array into a single alert
+  if (i === 6) {
+    alert('Sorry that was your 6th attempt. Here are the mascots for my favorite sports team:');
+    for (let i = 0; i < myMascot.length; i++) {
+      alert(myMascot[i]);
+    }
   }
 }
 // personally thanking user with added name for answering all questions
 alert('Thanks for playing! Correct answers: ' + correctAnswers);
+
+
