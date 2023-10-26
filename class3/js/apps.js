@@ -94,27 +94,28 @@ for (let i = 1; i <= 4; i++){
 }
 
 //created loop for array question
-let visitedCountries = ['Japan', 'Kwajalein Atoll', 'Guam', 'Philippines', 'South Korea', 'Hong Kong', 'Thailand', 'France', 'Switzerland', 'Greece'];
-let countryGuess = 0;
-let guessedCorrect = false;
+let myCountries = ['Japan', 'Kwajalein Atoll', 'Guam', 'Philippines', 'South Korea', 'Hong Kong', 'Thailand', 'France', 'Switzerland', 'Greece'];
 
-while (!guessedCorrect) {
-  countryGuess = prompt ('Guess a country I\'ve visted');
-  // visitedCountries = visitedCountries.toLowerCase();
+
+for (let i = 1; i <= 6; i++) {
+  let countryGuess = prompt('Guess a country I\'ve visited');
+  countryGuess = countryGuess.toLowerCase();
   console.log(countryGuess);
-  if (visitedCountries.includes(countryGuess)) {
-    alert ('You guessed right!');
-    correctAnswers++;
-    guessedCorrect = true;
+
+  if (myCountries.includes(countryGuess)) {
+    alert('You guessed right!');
+    correctAnswers++; // Increment correctAnswers if the guess is correct
     break;
+  } else {
+    alert('Try again');
   }
+
 //after 6th attempt, lists the array within the webpage
-if (!guessedCorrect) {
+if ( i === 6) {
   alert('Sorry that was your 6th attempt. Here are all the countries I\'ve visted:');
-for (let i = 0; i < visitedCountries.length; i++){
-  alert(visitedCountries[i]);
+for (let i = 0; i < myCountries.length; i++){
+  alert(myCountries[i]);}
   }
-}
 }
 // personally thanking user with added name for answering all questions
 alert('Thanks for playing! Correct answers: ' + correctAnswers);
