@@ -34,3 +34,8 @@ footer {
   padding: 10px;
   text-align: center;
 }
+
+main ol li {
+  margin: 25px;
+  list-style: decimal;
+}
